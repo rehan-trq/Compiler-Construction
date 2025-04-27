@@ -1,0 +1,22 @@
+Parsing Results for Input File: input.txt
+
+=== Parsing Line 1: "a a a" ===
+Line 1: Parsing completed successfully
+=== Parsing Line 2: "a a b" ===
+Line 2: Parsing completed successfully
+=== Parsing Line 3: "a c" ===
+Line 3: Parsing completed successfully
+=== Parsing Line 4: "a a a a" ===
+Line 4: Parsing completed successfully
+=== Parsing Line 5: "a b c" ===
+Line 5: Syntax Error - Unexpected symbol 'b'
+Line 5: Parsing completed with 1 errors
+=== Parsing Line 6: "a a b b c c" ===
+Line 6: Syntax Error - Unexpected symbol 'c'
+Line 6: Syntax Error - Unexpected symbol 'c'
+Line 6: Parsing completed with 2 errors
+=== Parsing Line 7: "b a c" ===
+Line 7: Syntax Error - Unexpected symbol 'b'
+Line 7: Parsing completed with 1 errors
+
+Parsing completed with a total of 4 errors.

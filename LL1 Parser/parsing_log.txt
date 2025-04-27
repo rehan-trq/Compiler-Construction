@@ -1,0 +1,145 @@
+=== Parsing Line 1: "a a a" ===
+Stack: $ S 	Input: a
+Action: Expand S -> a S' 
+Stack: $ S' a 	Input: a
+Action: Match a
+Stack: $ S' 	Input: a
+Action: Expand S' -> a S'' 
+Stack: $ S'' a 	Input: a
+Action: Match a
+Stack: $ S'' 	Input: a
+Action: Expand S'' -> A 
+Stack: $ A 	Input: a
+Action: Expand A -> a A' 
+Stack: $ A' a 	Input: a
+Action: Match a
+Stack: $ A' 	Input: $
+Action: Expand A' -> ε 
+Stack: $ 	Input: $
+Action: Match $
+Parsing completed successfully
+
+=== Parsing Line 2: "a a b" ===
+Stack: $ S 	Input: a
+Action: Expand S -> a S' 
+Stack: $ S' a 	Input: a
+Action: Match a
+Stack: $ S' 	Input: a
+Action: Expand S' -> a S'' 
+Stack: $ S'' a 	Input: a
+Action: Match a
+Stack: $ S'' 	Input: b
+Action: Expand S'' -> B 
+Stack: $ B 	Input: b
+Action: Expand B -> b B' 
+Stack: $ B' b 	Input: b
+Action: Match b
+Stack: $ B' 	Input: $
+Action: Expand B' -> ε 
+Stack: $ 	Input: $
+Action: Match $
+Parsing completed successfully
+
+=== Parsing Line 3: "a c" ===
+Stack: $ S 	Input: a
+Action: Expand S -> a S' 
+Stack: $ S' a 	Input: a
+Action: Match a
+Stack: $ S' 	Input: c
+Action: Expand S' -> C 
+Stack: $ C 	Input: c
+Action: Expand C -> c 
+Stack: $ c 	Input: c
+Action: Match c
+Stack: $ 	Input: $
+Action: Match $
+Parsing completed successfully
+
+=== Parsing Line 4: "a a a a" ===
+Stack: $ S 	Input: a
+Action: Expand S -> a S' 
+Stack: $ S' a 	Input: a
+Action: Match a
+Stack: $ S' 	Input: a
+Action: Expand S' -> a S'' 
+Stack: $ S'' a 	Input: a
+Action: Match a
+Stack: $ S'' 	Input: a
+Action: Expand S'' -> A 
+Stack: $ A 	Input: a
+Action: Expand A -> a A' 
+Stack: $ A' a 	Input: a
+Action: Match a
+Stack: $ A' 	Input: a
+Action: Expand A' -> a A' 
+Stack: $ A' a 	Input: a
+Action: Match a
+Stack: $ A' 	Input: $
+Action: Expand A' -> ε 
+Stack: $ 	Input: $
+Action: Match $
+Parsing completed successfully
+
+=== Parsing Line 5: "a b c" ===
+Stack: $ S 	Input: a
+Action: Expand S -> a S' 
+Stack: $ S' a 	Input: a
+Action: Match a
+Stack: $ S' 	Input: b
+Error: No production for S' with input b
+Stack: $ S' 	Input: c
+Action: Expand S' -> C 
+Stack: $ C 	Input: c
+Action: Expand C -> c 
+Stack: $ c 	Input: c
+Action: Match c
+Stack: $ 	Input: $
+Action: Match $
+Parsing completed with 1 errors
+
+=== Parsing Line 6: "a a b b c c" ===
+Stack: $ S 	Input: a
+Action: Expand S -> a S' 
+Stack: $ S' a 	Input: a
+Action: Match a
+Stack: $ S' 	Input: a
+Action: Expand S' -> a S'' 
+Stack: $ S'' a 	Input: a
+Action: Match a
+Stack: $ S'' 	Input: b
+Action: Expand S'' -> B 
+Stack: $ B 	Input: b
+Action: Expand B -> b B' 
+Stack: $ B' b 	Input: b
+Action: Match b
+Stack: $ B' 	Input: b
+Action: Expand B' -> b B' 
+Stack: $ B' b 	Input: b
+Action: Match b
+Stack: $ B' 	Input: c
+Error: No production for B' with input c
+Stack: $ B' 	Input: c
+Error: No production for B' with input c
+Stack: $ B' 	Input: $
+Action: Expand B' -> ε 
+Stack: $ 	Input: $
+Action: Match $
+Parsing completed with 2 errors
+
+=== Parsing Line 7: "b a c" ===
+Stack: $ S 	Input: b
+Error: No production for S with input b
+Stack: $ S 	Input: a
+Action: Expand S -> a S' 
+Stack: $ S' a 	Input: a
+Action: Match a
+Stack: $ S' 	Input: c
+Action: Expand S' -> C 
+Stack: $ C 	Input: c
+Action: Expand C -> c 
+Stack: $ c 	Input: c
+Action: Match c
+Stack: $ 	Input: $
+Action: Match $
+Parsing completed with 1 errors
+
