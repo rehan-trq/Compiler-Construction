@@ -1,0 +1,19 @@
+{
+  "store": {
+    "name": "BigMart",
+    "address": {
+      "street": "123 Main St",
+      "city": "Anytown"
+    },
+    "departments": [
+      {
+        "name": "Grocery",
+        "products": [
+          {"id": "g1", "name": "Milk", "price": 2.99},
+          {"id": "g2", "name": "Bread", "price": 1.99}
+        ]
+        
+        }
+   ]
+  } 
+ }
